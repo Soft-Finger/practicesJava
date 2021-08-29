@@ -4,6 +4,7 @@ public class Main {
 
         caracteres(tab);
         System.out.println(fact(5));
+        afficher();
     }
 
     public static void caracteres(String[] tab) {
@@ -25,5 +26,9 @@ public class Main {
         } else {
             return n * fact(n - 1);
         }
+    }
+
+    public static void afficher() {
+        System.out.println("n,IMPORTE QUOI");
     }
 }
