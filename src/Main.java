@@ -2,9 +2,11 @@ public class Main {
     public static void main(String[] args) {
         String[] tab = {"mange", "orange", "goyave", "cerise", "papaye"};
 
-        caracteres(tab);
+        /*caracteres(tab);
         System.out.println(fact(5));
-        afficher();
+        afficher();*/
+        System.out.println(getMessage("ep"));
+        ;
     }
 
     public static void caracteres(String[] tab) {
@@ -30,5 +32,15 @@ public class Main {
 
     public static void afficher() {
         System.out.println("n,IMPORTE QUOI");
+    }
+
+    public static String getMessage(String language) {
+        if (language.equals("ep")) {
+            return "Hola Mundo";
+        } else if (language.equals("fr")) {
+            return "Bonjour le monde";
+        } else {
+            return "Hello world";
+        }
     }
 }
